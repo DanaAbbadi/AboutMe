@@ -1,12 +1,36 @@
 body{
-    background-color: bisque;
+    background-color: lavenderblush;
+   
+
 }
 h1{
+    margin-top: 2cm;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
+    border-style: groove;
 }
 
 p{
     /* text-align: center; */
     font-size: 25px;
+    border-style: groove;
+
 }
+
+#img1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+    margin-top: 1.5cm;
+
+}
+#intr{
+       text-align: center;
+       font-size: 25px;
+       border-style: none;
+}
+
+
+

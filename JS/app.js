@@ -1,5 +1,6 @@
 'use strict'
 
+var score = 0;
 var realAns = 'yes';
 var username = prompt("Hello there, what's your name?");
 alert('Welcome ' + username + " to my site, we will play a guessing game so you can get to know me better");
@@ -31,6 +32,62 @@ yesfxn(ans5, realAns);
 
 alert('Thank you ' + username + " for playing the game, hope you enjoyed it!");
 
+var dateday = alert("let's play a diiferent game!");
+for (var i = 0; i < 4; i++) {
+    dateday = prompt("Ok now we will do something different, I was born on May, can you guess the date?");
+    console.log(dateday);
+    if (dateday === '13') {
+        alert('You are right!');
+        score++;
+        break;
+    }
+    if (dateday > 13) {
+        alert('too high');
+    }
+    if (dateday < 13) {
+        alert('too low');
+    }
+    if (i == 3) {
+        alert('The correct answer is 13');
+
+    }
+}
+
+var series = ['the plateform', 'friends', 'suits', 'black mirror', 'gilmore girls', 'good will hunting', 'horrible bosses', 'girls trip', 'atonement', 'prison break']
+var guess = prompt("can you guess one of my favourite movies/series?").toLowerCase();
+var trail = 1;
+var correct=0;
+while (trail < 6) {
+
+    for (var ii = 0; ii < 10; ii++) {
+        console.log(ii+ " "+ guess +" " + series[ii]);
+        if(guess === series[ii]){
+            alert('You are right!');
+            correct=1;
+            score++;
+            break;
+        }
+    }
+    if(correct==1){
+        break;
+    }
+    guess = prompt("try again?").toLowerCase();
+    trail++;
+}
+alert('here are all my favourite movies/series');
+var all=" ";
+for(var iii=0; iii<series.length;iii++){
+    all= all + series[iii]+", ";
+   
+}
+alert(all);
+
+alert('Your score is '+ score);
+
+
+
+
+
 
 
 
@@ -43,15 +100,17 @@ function yesfxn(ans, pick) {
             if (pick == 'yes') {
                 alert("your answer is correct");
                 //console.log("your answer is correct");
+                score++;
                 break;
             }
             else alert("your answer is wrong"); // I faced a problem when the user answers yes but the correct answer 
             break;                             //is no, the switch will enter the yes case and won't break from it     
         case 'n':
         case 'no':
-            if (pick == 'no') { 
+            if (pick == 'no') {
                 alert("your answer is correct");
-               // console.log("your answer is correct");
+                score++;
+                // console.log("your answer is correct");
                 break;
             }
         default:
