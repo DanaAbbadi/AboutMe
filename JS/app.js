@@ -56,19 +56,19 @@ for (var i = 0; i < 4; i++) {
 var series = ['the plateform', 'friends', 'suits', 'black mirror', 'gilmore girls', 'good will hunting', 'horrible bosses', 'girls trip', 'atonement', 'prison break']
 var guess = prompt("can you guess one of my favourite movies/series?").toLowerCase();
 var trail = 1;
-var correct=0;
+var correct= false;
 while (trail < 6) {
 
     for (var ii = 0; ii < 10; ii++) {
         console.log(ii+ " "+ guess +" " + series[ii]);
         if(guess === series[ii]){
             alert('You are right!');
-            correct=1;
+            correct=true;
             score++;
             break;
         }
     }
-    if(correct==1){
+    if(correct==true){
         break;
     }
     guess = prompt("try again?").toLowerCase();
