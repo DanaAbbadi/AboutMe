@@ -1,36 +1,139 @@
 body{
-    background-color: lavenderblush;
-   
-
+    background-color: #d1b6a3;
 }
-h1{
+main h1{
     margin-top: 2cm;
     text-align: center;
     font-size: 70px;
-    border-style: groove;
+    margin-bottom: 500cm;
 }
 
-p{
-    /* text-align: center; */
+
+/* Nav Bar */
+.my-header nav ul li a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+.my-header{
+    background-color: #d1b6a3;
+    color: #f5f5f5;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 30px;
+    
+
+}
+
+.my-header nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+    text-transform: uppercase;
     font-size: 25px;
-    border-style: groove;
-
 }
 
-#img1{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50%;
-    width: 50%;
-    margin-top: 1.5cm;
+.my-header h1{
+    float: left;
+    font-size: 25px;
 
 }
-#intr{
-       text-align: center;
-       font-size: 25px;
-       border-style: none;
+.my-header nav{
+    float: right;
+    padding: 0 30px;
+}
+
+.my-header nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#BGpic {
+    background-image: url('../img/pap1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    margin-top: 100px;
+    color: #d1b6a3;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#Program {
+    height: 300px;
+    padding: 40px 40px;
+}
+
+#Program h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#Program p{
+    text-align: center;
+    font-weight: bold;
+}
+
+#Program ul li{
+    list-style-type: circle;
+    padding: 5px;
+    margin-left: 100px;
+    list-style-position: inside;
+}
+
+#Program ul{
+  background: #ffe5e5;
+  padding: 2px;
+  text-align: center;
 }
 
 
+#Contact {
+    text-align: center;
+    background-color:#f5f5f5;
+    color: black;
+    padding: 5px;
+}
+
+.edu{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#top{
+    font-size: 30px;
+    text-align: center;
+}
+.list{
+    
+    list-style-type: none;
+    width: 500px;
+   margin-left:-35px
+}
+
+.list li img {
+    float: left;
+    margin: 0 15px 0 0;
+    vertical-align: middle;
+  }
+
+  .list li {
+    padding: 10px;
+    overflow: auto;
+
+  }
+   
+ .list li:hover {
+    background: #eee;
+    cursor: pointer;
+  }
+
+  .list h3 {
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+    display: inline-block;   
+  }
 
